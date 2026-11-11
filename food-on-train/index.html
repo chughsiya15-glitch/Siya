@@ -93,8 +93,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .steps li:last-child{border-bottom:0}
 .steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--serif);font-size:30px;line-height:1;color:var(--ink);letter-spacing:-.02em}
 .steps h3{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:2px}
-/* placeholder for case study text still to be supplied */
-.todo{border:1.5px dashed var(--accent);background:var(--accent-soft);color:var(--accent-ink);border-radius:12px;padding:14px 16px;font-size:14px;line-height:1.5}
+.results{list-style:none;display:grid;gap:4px}
+.results li{position:relative;padding:14px 0 14px 28px;border-bottom:1px dashed var(--line)}
+.results li:last-child{border-bottom:0}
+.results li::before{content:"";position:absolute;left:4px;top:25px;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
 
 .reels-sec{background:var(--bg-2);border-radius:28px;padding:48px 40px;margin:24px 0 8px}
 .reels-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:32px}
@@ -153,7 +155,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <a class="back rv" href="../#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg>Back to work</a>
     <h1 class="rv" style="margin-top:36px">Food on Train: selling a new habit through <em>local creators</em></h1>
     <div class="cs-meta rv">
-      <div class="eyebrow">Campaign case study · Swiggy · 2026</div>
+      <div class="eyebrow">Swiggy · Influencer campaign · February 2026</div>
       <div class="tags"><span class="tag">Influencer</span><span class="tag">Regional</span><span class="tag">Brand marketing</span></div>
     </div>
     <div class="cover rv"><img src="../assets/food-on-train-cover.svg" alt="Food on Train campaign cover: a train window with a meal tray"></div>
@@ -171,30 +173,27 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <section class="block rv" id="goal">
       <div class="block-head"><div class="eyebrow"><b>01</b> — Context</div><h2>The <em>goal</em></h2></div>
       <div class="prose">
-        <!-- TODO: replace with "The goal" text -->
-        <p class="todo">Text to come: paste the “The goal” section here.</p>
+        <p>Swiggy wanted orders and brand awareness for Food on Train, which delivers restaurant food to your train seat at 150+ stations. Most travellers outside the metros didn't know it existed.</p>
       </div>
     </section>
 
     <section class="block rv" id="role">
       <div class="block-head"><div class="eyebrow"><b>02</b> — Ownership</div><h2>My <em>role</em></h2></div>
       <div class="prose">
-        <!-- TODO: replace with "My role" text -->
-        <p class="todo">Text to come: paste the “My role” section here.</p>
+        <p>I ran the influencer campaign end to end across 10+ cities in five states: Maharashtra, West Bengal, Rajasthan, Uttar Pradesh and Chhattisgarh.</p>
       </div>
     </section>
 
     <section class="block rv" id="how">
       <div class="block-head"><div class="eyebrow"><b>03</b> — Process</div><h2>How I <em>ran it</em></h2></div>
       <ol class="steps">
-        <!-- TODO: replace each step with the 7 steps from "How I ran it" (optional short title in <h3>, detail in <p>) -->
-        <li><div><p class="todo">Step 1 text to come.</p></div></li>
-        <li><div><p class="todo">Step 2 text to come.</p></div></li>
-        <li><div><p class="todo">Step 3 text to come.</p></div></li>
-        <li><div><p class="todo">Step 4 text to come.</p></div></li>
-        <li><div><p class="todo">Step 5 text to come.</p></div></li>
-        <li><div><p class="todo">Step 6 text to come.</p></div></li>
-        <li><div><p class="todo">Step 7 text to come.</p></div></li>
+        <li><div><h3>Budget first.</h3><p>Led the budget discussion, which set how many cities and creators we could cover.</p></div></li>
+        <li><div><h3>Agency selection.</h3><p>Chose the agency best suited to each region.</p></div></li>
+        <li><div><h3>Written brief.</h3><p>Briefed the agency on budget, region, and the offers and restaurants to push.</p></div></li>
+        <li><div><h3>Creator shortlist.</h3><p>Picked creators on three filters, in order: their audience is in the target region, they already post similar food or travel content, and they fit the budget.</p></div></li>
+        <li><div><h3>Localised scripts.</h3><p>Wrote each script around the stations in that creator's own state, in the language their audience speaks, with a coupon code to track orders.</p></div></li>
+        <li><div><h3>Quality check.</h3><p>Reviewed every video before it went out and suggested edit formats.</p></div></li>
+        <li><div><h3>Go-live and tracking.</h3><p>Took the content live and tracked performance.</p></div></li>
       </ol>
     </section>
 
@@ -230,24 +229,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <section class="block rv" id="dropouts" style="border-top:0">
       <div class="block-head"><div class="eyebrow"><b>04</b> — Risk</div><h2>Planning for <em>dropouts</em></h2></div>
       <div class="prose">
-        <!-- TODO: replace with "Planning for dropouts" text -->
-        <p class="todo">Text to come: paste the “Planning for dropouts” section here.</p>
+        <p>Creators drop out and videos fail review. I kept two backup creators ready for every slot, so no city went live late.</p>
       </div>
     </section>
 
     <section class="block rv" id="results">
       <div class="block-head"><div class="eyebrow"><b>05</b> — Outcome</div><h2><em>Results</em></h2></div>
       <div class="prose">
-        <!-- TODO: replace with "Results" text -->
-        <p class="todo">Text to come: paste the “Results” section here.</p>
+        <ul class="results">
+          <li>Creators live across 10+ cities in five states, in Tier 1, 2 and 3 markets</li>
+          <li>Top reel: 3.4K likes and 8.8K shares from a regional travel creator in West Bengal</li>
+        </ul>
       </div>
     </section>
 
     <section class="block rv" id="learned">
       <div class="block-head"><div class="eyebrow"><b>06</b> — Reflection</div><h2>What I <em>learned</em></h2></div>
       <div class="prose">
-        <!-- TODO: replace with "What I learned" text -->
-        <p class="todo">Text to come: paste the “What I learned” section here.</p>
+        <p>The best-performing reel came from a regional travel vlogger, not a food page. For a travel product, the creator's audience mattered more than their category.</p>
       </div>
     </section>
 
