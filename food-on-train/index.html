@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food on Train — Siya Chugh</title>
+<meta name="description" content="Case study: selling Food on Train as a new habit through local creators across 10+ cities in five states, for Swiggy.">
+<meta property="og:title" content="Food on Train: selling a new habit through local creators">
+<meta property="og:description" content="Swiggy creator campaign across 10+ cities in five states, with a top reel reaching 8.8K shares.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c2410c'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23fff7ed' text-anchor='middle'%3Esc%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ---- shared tokens & base (same as the home page) ---- */
+:root{
+  --bg:#f7f2ea; --bg-2:#efe7da; --card:#fffdf9; --ink:#1c1917; --ink-2:#57534e; --ink-3:#8a8178;
+  --line:#e2d8c9; --accent:#c2410c; --accent-soft:#fde4d3; --accent-ink:#9a3412; --dark:#1c1917; --on-dark:#f7f2ea;
+  --radius:18px; --max:1180px;
+  --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141210; --bg-2:#1c1916; --card:#201c19; --ink:#f3ede4; --ink-2:#bdb3a7; --ink-3:#8a8178;
+  --line:#342e29; --accent:#fb8a4c; --accent-soft:#3a2216; --accent-ink:#fdba8c; --dark:#0d0b0a; --on-dark:#f3ede4;
+}}
+:root[data-theme="dark"]{
+  --bg:#141210; --bg-2:#1c1916; --card:#201c19; --ink:#f3ede4; --ink-2:#bdb3a7; --ink-3:#8a8178;
+  --line:#342e29; --accent:#fb8a4c; --accent-soft:#3a2216; --accent-ink:#fdba8c; --dark:#0d0b0a; --on-dark:#f3ede4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+em{font-style:italic;font-family:var(--serif)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.eyebrow b{color:var(--accent);font-weight:600}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4vw,44px);line-height:1.08;letter-spacing:-.02em;margin-top:12px}
+h2 em{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font:500 15px var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--ink);color:var(--bg)}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-ghost{border-color:var(--line);background:var(--card)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn svg{width:16px;height:16px}
+nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+nav.scrolled{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--serif);font-size:22px;text-decoration:none;letter-spacing:-.01em}
+.logo span{color:var(--accent);font-style:italic}
+.nav-right{display:flex;gap:8px;align-items:center}
+.icon-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+.icon-btn svg{width:18px;height:18px}
+.nav-right .btn{padding:9px 16px;font-size:14px}
+@media (max-width:480px){.nav-right .btn span{display:none}}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;padding:5px 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink-2)}
+footer{padding:36px 0 48px;color:var(--ink-3);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ---- case study page ---- */
+.back{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--ink-2);text-decoration:none;padding:8px 14px 8px 10px;border:1px solid var(--line);border-radius:999px;background:var(--card);transition:color .2s,border-color .2s}
+.back:hover{color:var(--ink);border-color:var(--ink)}
+.back svg{width:16px;height:16px;transition:transform .25s}
+.back:hover svg{transform:translateX(-3px)}
+.cs-hero{padding:116px 0 0}
+.cs-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6.4vw,84px);line-height:1;letter-spacing:-.03em;margin:22px 0 28px;max-width:1000px}
+.cs-hero h1 em{color:var(--accent)}
+.cs-meta{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-bottom:40px}
+.cover{border-radius:24px;overflow:hidden;border:1px solid var(--line);background:var(--bg-2);aspect-ratio:1024/572}
+.cover img{width:100%;height:100%;object-fit:cover}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card);margin-top:28px}
+.fact{padding:28px 30px;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact .num{font-family:var(--serif);font-size:clamp(40px,5vw,60px);line-height:1;letter-spacing:-.03em}
+.fact .num sup{color:var(--accent);font-size:.5em;vertical-align:.7em;margin-left:2px}
+.fact p{font-size:14px;color:var(--ink-2);margin-top:10px}
+
+.cs-body{padding:72px 0 40px}
+.block{display:grid;grid-template-columns:320px 1fr;gap:48px;padding:48px 0;border-top:1px solid var(--line)}
+.block-head{position:sticky;top:100px;align-self:start}
+.block-head h2{margin-top:10px}
+.prose{max-width:680px;color:var(--ink-2);font-size:17px;line-height:1.7}
+.prose p+p{margin-top:16px}
+.prose strong{color:var(--ink);font-weight:500}
+.steps{list-style:none;counter-reset:s;max-width:720px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:64px 1fr;gap:18px;padding:18px 0;border-bottom:1px dashed var(--line);color:var(--ink-2)}
+.steps li:last-child{border-bottom:0}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--serif);font-size:30px;line-height:1;color:var(--ink);letter-spacing:-.02em}
+.steps h3{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:2px}
+/* placeholder for case study text still to be supplied */
+.todo{border:1.5px dashed var(--accent);background:var(--accent-soft);color:var(--accent-ink);border-radius:12px;padding:14px 16px;font-size:14px;line-height:1.5}
+
+.reels-sec{background:var(--bg-2);border-radius:28px;padding:48px 40px;margin:24px 0 8px}
+.reels-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:32px}
+.reels-head p{color:var(--ink-2);max-width:340px}
+.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.reel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:20px;transition:transform .35s,box-shadow .35s}
+.reel:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(28,25,23,.35)}
+.reel-top{display:flex;align-items:center;gap:12px}
+.avatar{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.avatar svg{width:22px;height:22px}
+.reel h3{font-size:16px;font-weight:600;word-break:break-all;line-height:1.3}
+.reel .region{font-size:13px;color:var(--ink-3);display:flex;align-items:center;gap:5px}
+.reel .region svg{width:13px;height:13px}
+.reel .btn{margin-top:auto;justify-content:center}
+
+.cs-next{padding:40px 0 100px}
+.next{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:var(--dark);color:var(--on-dark);border-radius:28px;padding:clamp(32px,5vw,56px)}
+.next h2{font-size:clamp(28px,4vw,44px)}
+.next h2 em{color:#fb8a4c}
+.next .eyebrow{color:rgba(247,242,234,.6)}
+.next .btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(247,242,234,.3)}
+.next .btn-ghost:hover{border-color:var(--on-dark)}
+
+@media (max-width:860px){
+  .block{grid-template-columns:1fr;gap:20px;padding:36px 0}
+  .block-head{position:static}
+  .reels{grid-template-columns:1fr}
+  .reels-sec{padding:32px 20px}
+  .facts{grid-template-columns:1fr}
+  .fact{border-right:0;border-bottom:1px solid var(--line);padding:22px}
+  .fact:last-child{border-bottom:0}
+  .steps li{grid-template-columns:48px 1fr;gap:12px}
+  .steps li::before{font-size:24px}
+}
+@media (max-width:600px){.wrap{padding:0 16px}.cs-hero{padding-top:96px}.cs-body{padding-top:40px}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="../" class="logo">Siya <span>Chugh</span></a>
+    <div class="nav-right">
+      <button class="icon-btn" id="theme" aria-label="Toggle colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-primary" href="../Siya_Chugh_resume.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg><span>Resume</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <a class="back rv" href="../#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg>Back to work</a>
+    <h1 class="rv" style="margin-top:36px">Food on Train: selling a new habit through <em>local creators</em></h1>
+    <div class="cs-meta rv">
+      <div class="eyebrow">Campaign case study · Swiggy · 2026</div>
+      <div class="tags"><span class="tag">Influencer</span><span class="tag">Regional</span><span class="tag">Brand marketing</span></div>
+    </div>
+    <div class="cover rv"><img src="../assets/food-on-train-cover.svg" alt="Food on Train campaign cover: a train window with a meal tray"></div>
+    <div class="facts rv">
+      <div class="fact"><div class="num">10<sup>+</sup></div><p>Cities with creators live</p></div>
+      <div class="fact"><div class="num">5</div><p>States covered</p></div>
+      <div class="fact"><div class="num">8.8K</div><p>Shares on the top reel</p></div>
+    </div>
+  </div>
+</header>
+
+<main class="cs-body">
+  <div class="wrap">
+
+    <section class="block rv" id="goal">
+      <div class="block-head"><div class="eyebrow"><b>01</b> — Context</div><h2>The <em>goal</em></h2></div>
+      <div class="prose">
+        <!-- TODO: replace with "The goal" text -->
+        <p class="todo">Text to come: paste the “The goal” section here.</p>
+      </div>
+    </section>
+
+    <section class="block rv" id="role">
+      <div class="block-head"><div class="eyebrow"><b>02</b> — Ownership</div><h2>My <em>role</em></h2></div>
+      <div class="prose">
+        <!-- TODO: replace with "My role" text -->
+        <p class="todo">Text to come: paste the “My role” section here.</p>
+      </div>
+    </section>
+
+    <section class="block rv" id="how">
+      <div class="block-head"><div class="eyebrow"><b>03</b> — Process</div><h2>How I <em>ran it</em></h2></div>
+      <ol class="steps">
+        <!-- TODO: replace each step with the 7 steps from "How I ran it" (optional short title in <h3>, detail in <p>) -->
+        <li><div><p class="todo">Step 1 text to come.</p></div></li>
+        <li><div><p class="todo">Step 2 text to come.</p></div></li>
+        <li><div><p class="todo">Step 3 text to come.</p></div></li>
+        <li><div><p class="todo">Step 4 text to come.</p></div></li>
+        <li><div><p class="todo">Step 5 text to come.</p></div></li>
+        <li><div><p class="todo">Step 6 text to come.</p></div></li>
+        <li><div><p class="todo">Step 7 text to come.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="reels-sec rv" id="reels" aria-labelledby="reels-title">
+      <div class="reels-head">
+        <div><div class="eyebrow">On Instagram</div><h2 id="reels-title">Creator content <em>from the campaign</em></h2></div>
+      </div>
+      <div class="reels">
+        <article class="reel">
+          <div class="reel-top">
+            <div class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+            <div><h3>@flyingspvvlogs</h3><div class="region"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>West Bengal</div></div>
+          </div>
+          <a class="btn btn-ghost" href="https://www.instagram.com/reel/DU7wbTdkz7w/" target="_blank" rel="noopener">Watch reel ↗</a>
+        </article>
+        <article class="reel">
+          <div class="reel-top">
+            <div class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+            <div><h3>@lovelygurbani_</h3><div class="region"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Rajasthan</div></div>
+          </div>
+          <a class="btn btn-ghost" href="https://www.instagram.com/reel/DU-yNZXAWvE/" target="_blank" rel="noopener">Watch reel ↗</a>
+        </article>
+        <article class="reel">
+          <div class="reel-top">
+            <div class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+            <div><h3>@the.unseen.ayodhya</h3><div class="region"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Uttar Pradesh</div></div>
+          </div>
+          <a class="btn btn-ghost" href="https://www.instagram.com/reel/DVOTfpMEXgu/" target="_blank" rel="noopener">Watch reel ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="block rv" id="dropouts" style="border-top:0">
+      <div class="block-head"><div class="eyebrow"><b>04</b> — Risk</div><h2>Planning for <em>dropouts</em></h2></div>
+      <div class="prose">
+        <!-- TODO: replace with "Planning for dropouts" text -->
+        <p class="todo">Text to come: paste the “Planning for dropouts” section here.</p>
+      </div>
+    </section>
+
+    <section class="block rv" id="results">
+      <div class="block-head"><div class="eyebrow"><b>05</b> — Outcome</div><h2><em>Results</em></h2></div>
+      <div class="prose">
+        <!-- TODO: replace with "Results" text -->
+        <p class="todo">Text to come: paste the “Results” section here.</p>
+      </div>
+    </section>
+
+    <section class="block rv" id="learned">
+      <div class="block-head"><div class="eyebrow"><b>06</b> — Reflection</div><h2>What I <em>learned</em></h2></div>
+      <div class="prose">
+        <!-- TODO: replace with "What I learned" text -->
+        <p class="todo">Text to come: paste the “What I learned” section here.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<section class="cs-next">
+  <div class="wrap">
+    <div class="next rv">
+      <div><div class="eyebrow">Keep reading</div><h2>More <em>selected work</em></h2></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-accent" href="../#work">Back to work</a>
+        <a class="btn btn-ghost" href="../#contact">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span>© 2026 Siya Chugh · Bengaluru, India</span><a href="#" style="text-decoration:none">Back to top ↑</a></div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var onScroll=function(){nav.classList.toggle('scrolled',scrollY>20)};
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  var root=document.documentElement, key='sc-theme';
+  try{var s=localStorage.getItem(key); if(s) root.dataset.theme=s;}catch(e){}
+  document.getElementById('theme').onclick=function(){
+    var dark=root.dataset.theme? root.dataset.theme==='dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme=dark?'light':'dark';
+    try{localStorage.setItem(key,root.dataset.theme)}catch(e){}
+  };
+
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return; e.target.classList.add('in'); io.unobserve(e.target);
+    })},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  } else document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')});
+})();
+</script>
+</body>
+</html>

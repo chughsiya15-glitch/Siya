@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 572" role="img" aria-labelledby="t">
+  <title id="t">Food on Train campaign cover: a train window with a meal tray</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbd9b8"/><stop offset=".62" stop-color="#f6b583"/><stop offset="1" stop-color="#e9925a"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9a3412"/><stop offset="1" stop-color="#7c2d12"/>
+    </linearGradient>
+    <clipPath id="win"><rect x="292" y="96" width="440" height="300" rx="56"/></clipPath>
+  </defs>
+  <rect width="1024" height="572" fill="url(#wall)"/>
+  <g opacity=".14" stroke="#fde4d3" stroke-width="2">
+    <path d="M0 470h1024M0 500h1024M0 530h1024"/>
+  </g>
+  <!-- window -->
+  <rect x="276" y="80" width="472" height="332" rx="70" fill="#fde4d3" opacity=".22"/>
+  <g clip-path="url(#win)">
+    <rect x="292" y="96" width="440" height="300" fill="url(#sky)"/>
+    <circle cx="612" cy="214" r="46" fill="#fff7ed" opacity=".9"/>
+    <path d="M292 318c60-34 112-42 170-24s110 10 158-16 82-28 112-16v134H292z" fill="#c2410c" opacity=".55"/>
+    <path d="M292 350c70-26 130-20 190-6s120 6 170-12 60-18 80-14v98H292z" fill="#9a3412" opacity=".75"/>
+    <g fill="#7c2d12" opacity=".85">
+      <rect x="350" y="300" width="6" height="40"/><path d="M353 270l-18 34h36z"/>
+      <rect x="664" y="292" width="6" height="44"/><path d="M667 258l-20 38h40z"/>
+    </g>
+  </g>
+  <rect x="292" y="96" width="440" height="300" rx="56" fill="none" stroke="#fde4d3" stroke-width="4" opacity=".6"/>
+  <!-- tray -->
+  <rect x="228" y="412" width="568" height="22" rx="11" fill="#fde4d3"/>
+  <g transform="translate(512 404)">
+    <ellipse cx="0" cy="4" rx="96" ry="14" fill="#7c2d12" opacity=".35"/>
+    <path d="M-86 -6h172a86 40 0 0 1-172 0z" fill="#fff7ed"/>
+    <path d="M-64 -10c10-26 34-34 50-28 10-14 34-14 44 0 20-6 38 6 34 28z" fill="#f59e0b"/>
+    <circle cx="-30" cy="-22" r="7" fill="#c2410c"/><circle cx="6" cy="-28" r="6" fill="#16a34a"/><circle cx="34" cy="-18" r="7" fill="#c2410c"/>
+  </g>
+  <g transform="translate(676 384)" fill="#fff7ed">
+    <rect x="-18" y="-30" width="36" height="46" rx="6"/>
+    <rect x="-18" y="-30" width="36" height="10" rx="4" fill="#fdba8c"/>
+    <path d="M6 -46c4 6-4 10 0 16M-4 -46c4 6-4 10 0 16" stroke="#fde4d3" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
+  </g>
+</svg>
