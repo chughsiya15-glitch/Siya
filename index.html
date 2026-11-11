@@ -6,8 +6,8 @@
 <title>Siya Chugh — Brand Marketing</title>
 <meta name="description" content="Siya Chugh — brand marketer. Campaigns, creators & partnerships across Swiggy, Swish, BasketOption and Uncuter.">
 <meta property="og:title" content="Siya Chugh — Brand Marketing">
-<meta property="og:description" content="Campaigns, creators & partnerships. 5 national BTL campaigns across 10+ cities at Swiggy.">
-<meta property="og:image" content="assets/profile-photo.webp">
+<meta property="og:description" content="Campaigns, creators & partnerships. 6 national BTL campaigns across 10+ cities at Swiggy.">
+<meta property="og:image" content="https://siyaportfolio-pied.vercel.app/assets/profile-photo.webp">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c2410c'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23fff7ed' text-anchor='middle'%3Esc%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,10 +106,11 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 @media (max-width:600px){.brands .label{display:none}}
 
 /* stats */
-.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .stat{padding:36px 32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stat:nth-child(3n){border-right:0}
-.stat:nth-last-child(-n+3){border-bottom:0}
+.stat{grid-column:span 2}
+.stat:nth-child(n+4){grid-column:span 3;border-bottom:0}
+.stat:nth-child(3),.stat:nth-child(5){border-right:0}
 .stat .num{font-family:var(--serif);font-size:clamp(48px,6vw,72px);line-height:1;letter-spacing:-.03em}
 .stat .num sup{color:var(--accent);font-size:.5em;vertical-align:.7em;margin-left:2px}
 .stat h3{font-size:15px;font-weight:600;margin-top:14px}
@@ -118,7 +119,8 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
   .stats{grid-template-columns:1fr 1fr}
   .stat{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important;padding:26px 20px}
   .stat:nth-child(2n){border-right:0!important}
-  .stat:nth-last-child(-n+2){border-bottom:0!important}
+  .stat:nth-child(n){grid-column:auto}
+  .stat:nth-child(n):last-child{grid-column:1/-1;border-right:0!important;border-bottom:0!important}
 }
 
 /* experience */
@@ -290,7 +292,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="portrait rv">
       <div class="frame"><img src="assets/profile-photo.webp" alt="Portrait of Siya Chugh" width="720" height="960"></div>
       <div class="sticker s1"><b>48 hrs</b>Diwali assets, live in<br>10+ cities</div>
-      <div class="sticker s2"><b>4</b>brands in<br>1.5+ years</div>
+      <div class="sticker s2"><b>90+</b>creators across<br>10+ cities</div>
     </div>
   </div>
 
@@ -315,11 +317,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <p>A snapshot of what's been delivered across brand, influencer and on-ground work.</p>
     </div>
     <div class="stats rv">
-      <div class="stat"><div class="num"><span data-count="5">5</span></div><h3>National BTL campaigns</h3><p>Onam, Diwali, New Year, Ramzan, Durga Puja &amp; Food on Train</p></div>
-      <div class="stat"><div class="num"><span data-count="10">10</span><sup>+</sup></div><h3>Cities covered</h3><p>Mumbai, Bengaluru, Kolkata and more</p></div>
+      <div class="stat"><div class="num"><span data-count="6">6</span></div><h3>National BTL campaigns</h3><p>Onam, Diwali, New Year, Ramzan, Durga Puja &amp; Food on Train</p></div>
+      <div class="stat"><div class="num"><span data-count="10">10</span><sup>+</sup></div><h3>Cities covered</h3><p>Metros like Mumbai, Delhi and Bengaluru, plus Tier 2 and 3 cities like Patna, Mysuru, Asansol and Ayodhya</p></div>
       <div class="stat"><div class="num"><span data-count="90">90</span><sup>+</sup></div><h3>Influencers managed</h3><p>From 10K to 500K followers</p></div>
       <div class="stat"><div class="num"><span data-count="10">10</span><sup>+</sup></div><h3>Vendors &amp; agencies</h3><p>Including Pulpkey, Network18 &amp; Transit</p></div>
-      <div class="stat"><div class="num"><span data-count="30">30</span><sup>%+</sup></div><h3>Engagement growth</h3><p>Through organic content strategy</p></div>
       <div class="stat"><div class="num"><span data-count="10">10</span><sup>+</sup></div><h3>Hires made</h3><p>Editors &amp; social media team</p></div>
     </div>
   </div>
@@ -340,8 +341,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <span class="role-tag">BTL · Influencer · Agencies</span>
         </div>
         <ul class="wins">
-          <li><span class="k">5</span><span><strong>Major BTL campaigns</strong> — Onam, Diwali, New Year, Ramzan, Durga Puja &amp; Food on Train — executed across 10+ cities with seamless multi-region delivery.</span></li>
-          <li><span class="k">25+</span><span><strong>Influencers (50K–500K followers)</strong> onboarded and managed, from briefing to content delivery under tight timelines.</span></li>
+          <li><span class="k">6</span><span><strong>Major BTL campaigns</strong> — Onam, Diwali, New Year, Ramzan, Durga Puja &amp; Food on Train — executed across 10+ cities with seamless multi-region delivery.</span></li>
+          <li><span class="k">90+</span><span><strong>Influencers (10K–500K followers)</strong> onboarded and managed, from briefing to content delivery under tight timelines.</span></li>
           <li><span class="k">48h</span><span><strong>Turnaround on Diwali</strong> — coordinated 5+ vendors for a multi-city asset rollout.</span></li>
           <li><span class="k">10+</span><span><strong>External agencies</strong> managed end-to-end across influencer campaigns, BTL production and installation.</span></li>
           <li><span class="k sm">Data</span><span>Tracked post-campaign performance and reported to stakeholders to sharpen future rollouts.</span></li>
@@ -386,7 +387,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <ul class="wins">
           <li><span class="k">20+</span><span><strong>Active projects coordinated</strong>, running the founder–client–creator communication pipeline.</span></li>
           <li><span class="k">10+</span><span><strong>Roles hired</strong>, including creator partnerships for a GeeksforGeeks collaboration.</span></li>
-          <li><span class="k">1K+</span><span><strong>Daily likes</strong> generated through organic campaign strategy and content optimisation.</span></li>
+          <li><span class="k">1K+</span><span><strong>Daily likes</strong> on Uncuter's own Instagram page through organic content.</span></li>
           <li><span class="k sm">Creators</span><span>Ran influencer outreach with creators (10K–100K followers) for organic brand campaigns.</span></li>
         </ul>
       </article>
@@ -503,14 +504,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="about-text rv">
         <div class="eyebrow"><b>06</b> — About</div>
         <p style="margin-top:20px">Hi, I'm Siya — I like the part of marketing where a plan becomes something people can actually <em>see, touch and share.</em></p>
-        <p>I've spent the last 1.5+ years running BTL campaigns, managing influencer rollouts and keeping brand execution consistent across regions — most recently at Swiggy. Before that I wrote copy at Swish, did market research and outreach for a fintech launch, and ran creator ops in a founder's office.</p>
+        <p>I've spent close to two years running BTL campaigns, managing influencer rollouts and keeping brand execution consistent across regions — most recently at Swiggy. Before that I wrote copy at Swish, did market research and outreach for a fintech launch, and ran creator ops in a founder's office.</p>
       </div>
       <div class="rv">
         <div class="eyebrow">Education</div>
         <ul class="edu" style="margin-top:20px">
           <li><div><h3>Jain University</h3><p>BMS, International Marketing · 2022–2025</p></div><div class="score">8.1<small>SGPA</small></div></li>
-          <li><div><h3>Maharashtra State Board</h3><p>Class XII</p></div><div class="score">83.5%</div></li>
-          <li><div><h3>CBSE</h3><p>Class X</p></div><div class="score">70.5%</div></li>
         </ul>
       </div>
     </div>
@@ -532,7 +531,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="contact rv">
       <div class="eyebrow">07 — Contact</div>
-      <h2>Have a campaign that needs to <em>show up everywhere?</em></h2>
+      <h2>Hiring for brand, creator or partnerships? I'm open to <em>full-time roles.</em></h2>
       <div><a class="mail" href="mailto:chughsiya15@gmail.com">chughsiya15@gmail.com ↗</a><button class="copy" id="copy">Copy</button></div>
       <div class="links">
         <a href="https://www.linkedin.com/in/siya-chugh-056a25211/" target="_blank" rel="noopener"><small>LinkedIn</small><span>Siya Chugh ↗</span></a>
