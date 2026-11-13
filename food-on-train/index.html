@@ -104,6 +104,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .reels{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .reel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:20px;transition:transform .35s,box-shadow .35s}
 .reel:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(28,25,23,.35)}
+.reel-cover{position:relative;display:block;aspect-ratio:9/16;border-radius:calc(var(--radius) - 6px);overflow:hidden;background:var(--bg-2)}
+.reel-cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.reel:hover .reel-cover img{transform:scale(1.04)}
+.reel-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 70%,rgba(0,0,0,.35) 100%)}
+.reel-views{position:absolute;top:12px;left:12px;z-index:1;display:flex;align-items:center;gap:6px;padding:6px 11px;border-radius:999px;background:rgba(0,0,0,.6);color:#fff;font-size:13px;font-weight:600;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.reel-views svg{width:14px;height:14px}
+.reel-play{position:absolute;top:50%;left:50%;z-index:1;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.88);color:#1c1917}
+.reel-play svg{width:22px;height:22px;margin-left:3px}
 .reel-top{display:flex;align-items:center;gap:12px}
 .avatar{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
 .avatar svg{width:22px;height:22px}
@@ -203,6 +211,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </div>
       <div class="reels">
         <article class="reel">
+          <a class="reel-cover" href="https://www.instagram.com/reel/DN5hE7lDyfq/" target="_blank" rel="noopener" aria-label="Watch @mayojapan reel on Instagram"><img src="../assets/fot-reel-mayojapan.webp" alt="Cover of @mayojapan's Swiggy Food on Train reel" loading="lazy" width="540" height="960"><span class="reel-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span></a>
           <div class="reel-top">
             <div class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
             <div><h3>@mayojapan</h3><div class="region"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Maharashtra</div></div>
@@ -210,6 +219,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <a class="btn btn-ghost" href="https://www.instagram.com/reel/DN5hE7lDyfq/" target="_blank" rel="noopener">Watch reel ↗</a>
         </article>
         <article class="reel">
+          <a class="reel-cover" href="https://www.instagram.com/reel/DPREXgNDL7u/" target="_blank" rel="noopener" aria-label="Watch @istanboss reel on Instagram"><img src="../assets/fot-reel-istanboss.webp" alt="Cover of @istanboss's Swiggy Food on Train reel" loading="lazy" width="540" height="960"><span class="reel-views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>868K views</span><span class="reel-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span></a>
           <div class="reel-top">
             <div class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
             <div><h3>@istanboss</h3></div>
@@ -217,6 +227,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <a class="btn btn-ghost" href="https://www.instagram.com/reel/DPREXgNDL7u/" target="_blank" rel="noopener">Watch reel ↗</a>
         </article>
         <article class="reel">
+          <a class="reel-cover" href="https://www.instagram.com/reel/DU7wbTdkz7w/" target="_blank" rel="noopener" aria-label="Watch @flyingspvvlogs reel on Instagram"><img src="../assets/fot-reel-flyingspvvlogs.webp" alt="Cover of @flyingspvvlogs's Swiggy Food on Train reel" loading="lazy" width="540" height="960"><span class="reel-views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>194K views</span><span class="reel-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span></a>
           <div class="reel-top">
             <div class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
             <div><h3>@flyingspvvlogs</h3><div class="region"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>West Bengal</div></div>
