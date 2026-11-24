@@ -23,6 +23,11 @@ h2 em{color:var(--accent)}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font:500 15px var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s,border-color .2s}
 .btn:hover{transform:translateY(-2px)}
 .btn-primary{background:var(--ink);color:var(--bg)}
+.btn-resume{position:relative;background:var(--accent);color:#fff;font-weight:600;box-shadow:0 10px 22px -10px rgba(194,65,12,.85)}
+.btn-resume svg{width:18px;height:18px}
+.btn-resume::after{content:"";position:absolute;inset:-1px;border-radius:999px;border:2px solid var(--accent);opacity:0;pointer-events:none;animation:ring 2.2s ease-out infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.75}75%,100%{transform:scale(1.22,1.55);opacity:0}}
+@media (prefers-reduced-motion:reduce){.btn-resume::after{animation:none}}
 .btn-accent{background:var(--accent);color:#fff}
 .btn-ghost{border-color:var(--line);background:var(--card)}
 .btn-ghost:hover{border-color:var(--ink)}
@@ -37,7 +42,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .icon-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);display:grid;place-items:center;cursor:pointer;color:var(--ink)}
 .icon-btn svg{width:18px;height:18px}
 .nav-right .btn{padding:9px 16px;font-size:14px}
-@media (max-width:480px){.nav-right .btn span{display:none}}
+@media (max-width:480px){.nav-right .btn{padding:9px 13px}}
 
 .tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:12px;padding:5px 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink-2)}

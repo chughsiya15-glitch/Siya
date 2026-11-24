@@ -50,6 +50,11 @@ section{padding:110px 0}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font:500 15px var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s,border-color .2s}
 .btn:hover{transform:translateY(-2px)}
 .btn-primary{background:var(--ink);color:var(--bg)}
+.btn-resume{position:relative;background:var(--accent);color:#fff;font-weight:600;box-shadow:0 10px 22px -10px rgba(194,65,12,.85)}
+.btn-resume svg{width:18px;height:18px}
+.btn-resume::after{content:"";position:absolute;inset:-1px;border-radius:999px;border:2px solid var(--accent);opacity:0;pointer-events:none;animation:ring 2.2s ease-out infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.75}75%,100%{transform:scale(1.22,1.55);opacity:0}}
+@media (prefers-reduced-motion:reduce){.btn-resume::after{animation:none}}
 .btn-accent{background:var(--accent);color:#fff}
 .btn-ghost{border-color:var(--line);background:var(--card)}
 .btn-ghost:hover{border-color:var(--ink)}
@@ -69,7 +74,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .icon-btn svg{width:18px;height:18px}
 .nav-right .btn{padding:9px 16px;font-size:14px}
 @media (max-width:1000px){.nav-links{display:none}}
-@media (max-width:480px){.nav-right .btn span{display:none}}
+@media (max-width:480px){.nav-right .btn{padding:9px 13px}}
 
 /* hero */
 .hero{padding:140px 0 60px;position:relative}
@@ -102,7 +107,10 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .brands .label{flex:none;padding-left:24px}
 .track{display:flex;gap:56px;animation:scroll 28s linear infinite;width:max-content}
 .marq{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);flex:1}
-.brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:26px;white-space:nowrap;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:26px;white-space:nowrap;color:var(--ink);text-decoration:none}
+a.brand{transition:color .2s}
+a.brand:hover{color:var(--accent)}
+.marq:hover .track{animation-play-state:paused}
 .brand img{width:34px;height:34px;border-radius:9px}
 .brand .star{color:var(--accent);font-size:18px}
 @keyframes scroll{to{transform:translateX(-50%)}}
@@ -302,8 +310,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <button class="icon-btn" id="theme" aria-label="Toggle colour theme">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
       </button>
-      <a class="btn btn-primary" href="resume/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span>Resume</span>
+      <a class="btn btn-resume" href="resume/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2.5"/><circle cx="15.2" cy="8.3" r="1.7"/><path d="M12.4 12.9c.4-1.4 1.5-2.2 2.8-2.2s2.4.8 2.8 2.2"/><path d="M7 7.6h3.2M7 10.4h2.6M7 15.6h10M7 18.2h7"/></svg><span>Resume</span>
       </a>
     </div>
   </div>
@@ -318,7 +326,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="cta-row rv">
         <a class="btn btn-accent" href="#work">See my work
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="resume/" target="_blank" rel="noopener">Preview resume</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/siya-chugh-056a25211/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
@@ -333,10 +340,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="brands-inner">
       <div class="eyebrow label">Worked with</div>
       <div class="marq"><div class="track" id="track">
-        <div class="brand"><img src="assets/swiggy-logo.webp" alt="">Swiggy</div><span class="brand"><span class="star">✦</span></span>
-        <div class="brand"><img src="assets/swish-logo.webp" alt="">Swish</div><span class="brand"><span class="star">✦</span></span>
-        <div class="brand"><img src="assets/basket-option-logo.webp" alt="">BasketOption</div><span class="brand"><span class="star">✦</span></span>
-        <div class="brand"><img src="assets/uncuber-logo.webp" alt="">Uncuter</div><span class="brand"><span class="star">✦</span></span>
+        <a class="brand" href="#exp-swiggy" aria-label="Swiggy: see my work there"><img src="assets/swiggy-logo.webp" alt="">Swiggy</a><span class="brand"><span class="star">✦</span></span>
+        <a class="brand" href="#exp-swish" aria-label="Swish: see my work there"><img src="assets/swish-logo.webp" alt="">Swish</a><span class="brand"><span class="star">✦</span></span>
+        <a class="brand" href="#exp-basketoption" aria-label="BasketOption: see my work there"><img src="assets/basket-option-logo.webp" alt="">BasketOption</a><span class="brand"><span class="star">✦</span></span>
+        <a class="brand" href="#exp-uncuter" aria-label="Uncuter: see my work there"><img src="assets/uncuber-logo.webp" alt="">Uncuter</a><span class="brand"><span class="star">✦</span></span>
       </div></div>
     </div>
   </div>
@@ -366,7 +373,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <p>Four roles across food-tech, quick commerce, fintech and a creator agency.</p>
     </div>
     <div class="roles">
-      <article class="role rv">
+      <article class="role rv" id="exp-swiggy">
         <div class="role-meta">
           <div class="role-co"><img src="assets/swiggy-logo.webp" alt="Swiggy logo"><h3>Swiggy</h3></div>
           <div class="role-title">Brand Marketing Trainee</div>
@@ -382,7 +389,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <li><span class="k sm">Cross-fn</span><span>Worked with design, operations and regional teams to keep every execution on-brand.</span></li>
         </ul>
       </article>
-      <article class="role rv">
+      <article class="role rv" id="exp-swish">
         <div class="role-meta">
           <div class="role-co"><img src="assets/swish-logo.webp" alt="Swish logo"><h3>Swish</h3></div>
           <div class="role-title">Copywriter Intern</div>
@@ -396,7 +403,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <li><span class="k sm">Vendors</span><span>Coordinated asset production and offline execution for timely, consistent delivery.</span></li>
         </ul>
       </article>
-      <article class="role rv">
+      <article class="role rv" id="exp-basketoption">
         <div class="role-meta">
           <div class="role-co"><img src="assets/basket-option-logo.webp" alt="BasketOption logo"><h3>BasketOption</h3></div>
           <div class="role-title">Marketing &amp; Client Engagement Intern</div>
@@ -410,7 +417,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <li><span class="k sm">Launch</span><span>Drove brand-awareness initiatives for an early-stage fintech launch across digital channels.</span></li>
         </ul>
       </article>
-      <article class="role rv">
+      <article class="role rv" id="exp-uncuter">
         <div class="role-meta">
           <div class="role-co"><img src="assets/uncuber-logo.webp" alt="Uncuter logo"><h3>Uncuter</h3></div>
           <div class="role-title">Founder's Office Intern</div>
