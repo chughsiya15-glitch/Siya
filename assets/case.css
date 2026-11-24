@@ -25,9 +25,6 @@ h2 em{color:var(--accent)}
 .btn-primary{background:var(--ink);color:var(--bg)}
 .btn-resume{position:relative;background:var(--accent);color:#fff;font-weight:600;box-shadow:0 10px 22px -10px rgba(194,65,12,.85)}
 .btn-resume svg{width:18px;height:18px}
-.btn-resume::after{content:"";position:absolute;inset:-1px;border-radius:999px;border:2px solid var(--accent);opacity:0;pointer-events:none;animation:ring 2.2s ease-out infinite}
-@keyframes ring{0%{transform:scale(1);opacity:.75}75%,100%{transform:scale(1.22,1.55);opacity:0}}
-@media (prefers-reduced-motion:reduce){.btn-resume::after{animation:none}}
 .btn-accent{background:var(--accent);color:#fff}
 .btn-ghost{border-color:var(--line);background:var(--card)}
 .btn-ghost:hover{border-color:var(--ink)}
